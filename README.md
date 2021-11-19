@@ -44,8 +44,8 @@
 - basic_linear.h
     - Please specify **TYPE** macro for matrix type.
     - Chelosky Inverse is only applicable on Positive-Definite Matrix
-        - However, you can do A^-1=(A^T*A)^-1*A^T, A can be any kind of matrix (but should be full rank). 
-        - That is because A^T*A is Positive-Definite
+        - However, you can do $A^-1=(A^T A)^-1 A^T$, A can be any kind of matrix (but should be full rank). 
+        - That is because $A^T A$ is Positive-Definite
     - no inplace multiplication for matrix, that is, you can't do $A = A \dot B$
     - You should create matrix only once because I use malloc in it.
         - Also it is not recommended to free the matrix, especially on mcus.
